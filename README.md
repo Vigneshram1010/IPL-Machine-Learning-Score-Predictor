@@ -1,41 +1,42 @@
-# IPL-Machine-Learning-Score-Predictor
+# IPL Score Predictor
 
-IPL Score Predictor
-This Streamlit web application enables users to predict the total runs scored in an IPL match using current match data such as runs and wickets.
+This Streamlit webapp enables user to predict total runs between teams using current runs and wickets.
 
-Algorithms Used
-This project utilizes various machine learning algorithms for prediction:
+**Algorithms used:**
 
-Linear Regression
-K-Nearest Neighbors Regressor
-XGBoost Regressor
-Random Forest Regressor
-Support Vector Regressor (SVR)
-Decision Tree Regressor
-Hyperparameter Optimization
-Optuna has been used for hyperparameter optimization to improve the performance of the models.
+* Linear Regression
+* K-Nearest Neighbor Regressor 
+* XGBoost Regressor
+* RandomForest Regressor
+* SVR
+* Decision Tree Regressor
 
-Dataset
-The dataset contains over-by-over details of IPL matches and runs from 2008 to 2020.
+**Hyperparamter Optimization:**
 
-Dataset Columns
-mid: Match ID
-date: Date when the match was played
-venue: Venue of the match
-bat_team: Batting team
-bowl_team: Bowling team
-batsman: Batsman
-bowler: Bowler
-runs: Runs scored
-wickets: Wickets taken
-overs: Overs
-run_last_5: Runs scored in the last 5 overs
-wicket_last_5: Wickets taken in the last 5 overs
-striker: Batsman on strike
-non-striker: Batsman at the non-striker's end
-total: Total score (target variable)
-Dataset Used
-The dataset used for this project is ipl_data.csv.
+Used optuna for paramter optimization.
 
-Streamlit App
-This app provides an interactive interface to input match data and predict the total runs.
+**Dataset:**
+
+The dataset comprises of over by over details of matches and runs from 2008 to 2020.
+
+Dataset Used: ipl_data.csv
+
+* mid - match id
+* date - when matches are played
+* venue - place where matches aew played
+* bat_team - batting team
+* bowl_team - bowling team
+* batsman - batsman
+* bowler - bowler
+* runs - runs scored
+* wickets - wickets
+* overs - overs - next 3 are based on this
+* run_last_5 - runs scored in last 5 overs
+* wicket_last_5 - wickets in last 5 overs
+* stricker - batsman playing as main 1
+* non-striker - batsman playing as runner up - not main 0
+* total - total score (target variable)
+
+**Streamlit App:**
+
+![](https://github.com/zep-analytics/IPLScorePredictor/blob/main/streamlit_app/ipl_score_predictor.gif)
